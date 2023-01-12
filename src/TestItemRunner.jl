@@ -142,6 +142,7 @@ function run_tests(path; filter=nothing)
     end
     ts = Test.pop_testset()
     Test.finish(ts)
+    return nothing
 end
 
 macro run_package_tests(ex...)
